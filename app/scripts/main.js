@@ -9,8 +9,14 @@ console.log('\'Allo \'Allo!');
 // $(function () { $('[data-toggle="popover"]').popover(); });
 
 
-
-
+    $('.js-production-menu').each(function() {
+      var $list = $(this);
+      var $images = $list.find('.js-production-menu-images');
+      $list.find('[data-image-ref]').on('mouseenter', function() {
+        var imageRef = $(this).data('image-ref');
+        $images.find(`[data-image-item="${imageRef}"]`).addClass('active').siblings('.active').removeClass('active');
+      });
+    });
 
 
 

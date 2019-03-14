@@ -253,9 +253,9 @@ a {
   position: relative;
   height: 100%;
   width: 50%;
-  background-image: url(../images/Gibion.png);
+ /*  background-image: url(../images/Gibion.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .products__photo__item{
@@ -264,20 +264,10 @@ a {
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: opacity 0.3s;
   opacity: 0;
-  &.products__lenta{
-    background-image: url(../images/Gibion2.png);
-  }
-  &.products__geomembrana{
-    background-image: url(../images/Gibion3.png);
-  }
-  &.products__georeshetka {
-    background-image: url(../images/Gibion4.png);
-  }
-  &.products__reotekstil{
-    background-image: url(../images/Gibion5.png);
-  }
-  &.products--active{
+
+  &.active{
     opacity: 1;
   }
 }
