@@ -9,7 +9,6 @@
 
   .navigation__phone {
     font-size: 15px;
-    color: white;
     position: absolute;
     top: 46px;
     left: 0;
@@ -34,6 +33,7 @@
     text-decoration: none;
     padding-bottom: 5px;
     border-bottom: solid transparent 3px;
+    color: inherit;
 
 
     &:hover {
