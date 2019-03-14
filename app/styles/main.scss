@@ -15,123 +15,7 @@ a {
   opacity: 0;
 }
 
-.header {
-  position: relative;
-  display: flex;
-  margin: 0 auto;
-  background-color: #768e9f;
-  width: 100%;
-  height: 900px;
-  background-image: url(../images/main_background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
-.container-fluid--header {
-  padding-left: 50px;
-  padding-right: 50px;
-  height: 900px;
-}
-
-.navigation {
-  position: relative;
-  height: 110px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.navigation__items {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  width: 550px;
-  justify-content: space-between;
-  font-size: 19px;
-  margin: 0;
-}
-
-.navigation__phone {
-  font-size: 15px;
-  color: white;
-  position: absolute;
-  top: 46px;
-  left: 0;
-}
-
-.navigation__social {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-  margin-left: 125px;
-  list-style: none;
-  justify-content: space-between;
-  width: 115px;
-  color: #d7dfe4;
-  font-size: 15px;
-}
-
-.navigation__social a {
-  color: #d7dfe4;
-  text-decoration: none;
-  padding-bottom: 3px;
-}
-
-.navigation__items a {
-  text-decoration: none;
-  padding-bottom: 5px;
-}
-
-.navigation__items a:hover,
-.navigation__social a:hover {
-  color: #bcc7cf;
-}
-
-.navigation__item--active a {
-  color: #0dd926;
-  border-bottom: solid #0dd926 3px;
-}
-
-.header__banner {
-  display: flex;
-  position: relative;
-  width: 1180px;
-  height: 350px;
-  margin: 0 auto;
-  margin-top: 200px;
-}
-
-.header__logo {
-  width: 400px;
-  height: 65px;
-  background-image: url(../images/Techplast-logo.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-
-
-}
-
-.header__tagline {
-  padding-left: 100px;
-  width: 780px;
-  height: 320px;
-  color: white;
-}
-
-.header__main-text {
-  font-size: 40px;
-  line-height: 45px;
-}
-
-.header__origin {
-  display: flex;
-  margin-top: 60px;
-  width: 300px;
-  height: 80px;
-  font-size: 19px;
-}
 
 
 
@@ -253,9 +137,6 @@ a {
   position: relative;
   height: 100%;
   width: 50%;
- /*  background-image: url(../images/Gibion.png);
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .products__photo__item{
@@ -264,7 +145,7 @@ a {
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s;
   opacity: 0;
 
   &.active{
@@ -696,3 +577,7 @@ a {
   font-size: 15px;
   color: #acb4c0;
 }
+
+@import "partials/header";
+@import "partials/products";
+@import "partials/navigation";
