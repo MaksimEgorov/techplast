@@ -1,23 +1,71 @@
-.main-header {
+.header {
     position: relative;
     display: flex;
     margin: 0 auto;
-    background-color: #768e9f;
     width: 100%;
-    height: 900px;
+      color:#021429;
+    
+    &.header--main{
     color: white;
     background-image: url(../images/main_background.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #768e9f;
+    height: 100vh;
+    min-height: 600px;
+    }
+    .header__scroll-btn{
+        position: absolute;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        background-color: #00c418;
+        bottom: 0;
+        left: 50px;
+        border: 0;
+        color: #ffffff;
+        padding: 0;
+
+        &:focus, &:active{
+            outline: none;
+        }
+
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left:50%;
+            margin: -9px 0 0 -6px;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #fff;
+            transform: rotate(45deg);
+            border-top: none;
+            border-left: none;
+            transition: opacity 0.8s, margin 0.8s;
+            opacity: 0;
+            margin-top: -30px;
+        }
+        &:before{
+            opacity: 1;
+            margin-top: -9px;
+        }
+
+        &:hover{
+            &:before {
+                opacity: 0;
+                margin-top: 10px;
+            }
+            &:after {
+                opacity: 1;
+                margin-top: -9px;
+            }
+        }
+    }
   }
   
-  .container-fluid--main-header {
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 900px;
-  }
   
-  .main-header__banner {
+  .header__banner {
     display: flex;
     position: relative;
     width: 1180px;
@@ -26,7 +74,7 @@
     margin-top: 200px;
   }
   
-  .main-header__logo {
+  .header__logo {
     width: 400px;
     height: 65px;
     background-image: url(../images/Techplast-logo.png);
@@ -36,26 +84,22 @@
   
   }
   
-  .main-header__tagline {
+  .header__tagline {
     padding-left: 100px;
     width: 780px;
     height: 320px;
     color: white;
   }
   
-  .main-header__main-text {
+  .header__main-text {
     font-size: 40px;
     line-height: 45px;
   }
   
-  .main-header__origin {
+  .header__origin {
     display: flex;
     margin-top: 60px;
     width: 300px;
     height: 80px;
     font-size: 19px;
-  }
-
-  .header{
-      color:#021429;
   }

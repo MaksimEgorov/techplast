@@ -1,0 +1,5 @@
+@if $enable-grid-classes {
+    .container-fluid {
+      @include make-container(100px);
+    }
+  }
