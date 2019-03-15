@@ -5,12 +5,22 @@
   justify-content: flex-end;
   align-items: baseline;
 
+  .navigation__logo {
+    width: 200px;
+    height: 35px;
+    background-image: url(../images/Techplast-logo-dark.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    left:0;
+    top:33px;
+  }
 
   .navigation__phone {
     font-size: 15px;
     position: absolute;
     top: 43px;
-    left: 0;
+    left: 280px;
   }
 
   .navigation__social {
@@ -46,11 +56,13 @@
       border-bottom-color: #0dd926;
     }
   }
+
   &.navigation-menu--social {
     font-size: 15px;
     width: 115px;
-    .navigation-social__link{
-        padding-bottom: 3px;
+
+    .navigation-social__link {
+      padding-bottom: 3px;
     }
   }
 }

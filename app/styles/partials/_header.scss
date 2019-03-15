@@ -1,11 +1,11 @@
 .header {
-    position: relative;
-    display: flex;
-    margin: 0 auto;
-    width: 100%;
-      color:#021429;
-    
-    &.header--main{
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  color: #021429;
+
+  &.header--main {
     color: white;
     background-image: url(../images/main_background.png);
     background-size: cover;
@@ -13,93 +13,129 @@
     background-color: #768e9f;
     height: 100vh;
     min-height: 600px;
+  }
+
+  &.header--products {
+    height: 100vh;
+    min-height: 600px;
+    background-color: #ffffff;
+    color: #021429;
+  }
+
+  .header__scroll-btn {
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    background-color: #00c418;
+    bottom: 0;
+    left: 50px;
+    border: 0;
+    color: #ffffff;
+    padding: 0;
+
+    &:focus,
+    &:active {
+      outline: none;
     }
-    .header__scroll-btn{
-        position: absolute;
-        z-index: 1;
-        width: 50px;
-        height: 50px;
-        background-color: #00c418;
-        bottom: 0;
-        left: 50px;
-        border: 0;
-        color: #ffffff;
-        padding: 0;
 
-        &:focus, &:active{
-            outline: none;
-        }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -9px 0 0 -6px;
+      width: 12px;
+      height: 12px;
+      border: 1px solid #fff;
+      transform: rotate(45deg);
+      border-top: none;
+      border-left: none;
+      transition: opacity 0.8s, margin 0.8s;
+      opacity: 0;
+      margin-top: -30px;
+    }
 
-        &:before, &:after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left:50%;
-            margin: -9px 0 0 -6px;
-            width: 12px;
-            height: 12px;
-            border: 1px solid #fff;
-            transform: rotate(45deg);
-            border-top: none;
-            border-left: none;
-            transition: opacity 0.8s, margin 0.8s;
-            opacity: 0;
-            margin-top: -30px;
-        }
-        &:before{
-            opacity: 1;
-            margin-top: -9px;
-        }
+    &:before {
+      opacity: 1;
+      margin-top: -9px;
+    }
 
-        &:hover{
-            &:before {
-                opacity: 0;
-                margin-top: 10px;
-            }
-            &:after {
-                opacity: 1;
-                margin-top: -9px;
-            }
-        }
+    &:hover {
+      &:before {
+        opacity: 0;
+        margin-top: 10px;
+      }
+
+      &:after {
+        opacity: 1;
+        margin-top: -9px;
+      }
     }
   }
-  
-  
-  .header__banner {
-    display: flex;
-    position: relative;
-    width: 1180px;
-    height: 350px;
-    margin: 0 auto;
-    margin-top: 200px;
+}
+
+.main-intro {
+  display: flex;
+  position: relative;
+  width: 1180px;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 200px;
+
+  &.main-intro--products{
+    margin-top: 120px;
   }
-  
-  .header__logo {
+
+  .main-intro__logo {
     width: 400px;
     height: 65px;
     background-image: url(../images/Techplast-logo.png);
     background-repeat: no-repeat;
     background-size: auto;
-  
-  
+
+    &.main-intro__logo--production {
+        background-image: none;
+        font-size: 60px;
+        padding-left: 20px;
+      }
   }
-  
-  .header__tagline {
-    padding-left: 100px;
+
+  .main-intro__text-container {
+    padding-left: 200px;
     width: 780px;
     height: 320px;
     color: white;
+
+    &.main-intro__text-container--production{
+        width: 550px;
+        height: 100px;
+        font-weight: 500;
+        padding-top: 18px;
+    }
+
+    .main-intro__text {
+      font-size: 40px;
+      line-height: 45px;
+
+      &.main-intro__text--products {
+        color: #021429;
+        font-size: 19px;
+        line-height: 22px;
+      }
+    }
+
+    .main-intro__origin {
+      display: flex;
+      margin-top: 60px;
+      width: 300px;
+      height: 80px;
+      font-size: 19px;
+
+      &.main-intro__origin--products {
+        color: #021429;
+      }
+    }
   }
-  
-  .header__main-text {
-    font-size: 40px;
-    line-height: 45px;
-  }
-  
-  .header__origin {
-    display: flex;
-    margin-top: 60px;
-    width: 300px;
-    height: 80px;
-    font-size: 19px;
-  }
+}

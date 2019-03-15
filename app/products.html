@@ -18,37 +18,69 @@
 <body>
   <!-- start of Header section -->
 
-  <div class="header">
-    <div class="container-fluid container-fluid--header">
-      <nav class="navigation">
-        <div class="navigation__phone" x-ms-format-detection="none">(495) 721-80-87</div>
-        <nav class="navigation-menu">
-          <a class="navigation-menu__link " href="index.html">Главная</a>
-          <a class="navigation-menu__link navigation-menu__link--active" href="products.html">Продукция</a>
-          <a class="navigation-menu__link " href="#">О компании</a>
-          <a class="navigation-menu__link " href="#">Контакты</a>
-        </nav>
-        <nav class="navigation__social navigation-menu navigation-menu--social">
-            <a class="navigation-menu__link" href="#">Блог</a>
-            <a class="navigation-menu__link" href="#">Статьи</a>
-        </nav>
-      </nav>
-
-      <div class="header__banner">
-        <div class="header__logo"></div>
-        <div class="header__tagline">
-          <span class="header__main-text">Производство и продажа геосинтетиков для дорожного строительства,
-            гидротехнических работ и ландшафтного дизайна</span>
-          <span class="header__origin">Отечественный<br>
-            производитель, с высокими
-            стандартами качества</span>
+  <div class="header ">
+        <div class="container-fluid container-fluid--header">
+          <nav class="navigation">
+            <div class="navigation__logo"></div>  
+            <div class="navigation__phone" x-ms-format-detection="none">(495) 721-80-87</div>
+            <nav class="navigation-menu">
+              <a class="navigation-menu__link " href="index.html">Главная</a>
+              <a class="navigation-menu__link navigation-menu__link--active" href="products.html">Продукция</a>
+              <a class="navigation-menu__link " href="#">О компании</a>
+              <a class="navigation-menu__link " href="#">Контакты</a>
+            </nav>
+            <nav class="navigation__social navigation-menu navigation-menu--social">
+              <a class="navigation-menu__link" href="#">Блог</a>
+              <a class="navigation-menu__link" href="#">Статьи</a>
+            </nav>
+          </nav>
+    
+          <div class="main-intro main-intro--products">
+            <div class="main-intro__logo main-intro__logo--production">ПРОДУКЦИЯ</div>
+            <div class="main-intro__text-container main-intro__text-container--production">
+              <span class="main-intro__text main-intro__text--products">Будущее дорожного строительства – за 
+                  геосинтетическими материалами. То, что было создано еще 50 лет назад, 
+                  сегодня пользуется стабильно высоким спросом.
+              </span>
+           <!--    <span class="main-intro__origin main-intro__origin--products">Отечественный<br>
+                производитель, с высокими
+                стандартами качества</span> -->
+            </div>
+          </div>
         </div>
       </div>
-      <div class="headder__down__btn"></div>
-    </div>
-  </div>
   <!-- End of Header section -->
 
+  <div class="container-fluid container-fluid__products js-production-menu">
+        <div class="products__list">
+          <div class="products__list__wrapper js-production-menu-list" id="list">
+            <span class="list__explanation"><a href="products.html">Наша продукция</a></span>
+            <div class="products__item production-menu__image" data-image-ref="production-image-1"><a href="#">Габионы</a></div>
+            <div class="products__item--underline"></div>
+            <div class="products__item production-menu__image" data-image-ref="production-image-2"><a href="#">Лента
+                бордюрная</a></div>
+            <div class="products__item--underline"></div>
+            <div class="products__item production-menu__image" data-image-ref="production-image-3"><a href="#">Геомембрана</a></div>
+            <div class="products__item--underline"></div>
+            <div class="products__item production-menu__image" data-image-ref="production-image-4"><a href="#">Георешетка</a></div>
+            <div class="products__item--underline"></div>
+            <div class="products__item production-menu__image" data-image-ref="production-image-5"><a href="#">Геотекстиль
+                (Дорнит)</a></div>
+          </div>
+        </div>
+        <div class="products__photo js-production-menu-images">
+          <div class="products__photo__item products__gabioni production-menu__image active" data-image-item="production-image-1"
+            style="background-image: url(./images/Gibion.png)"></div>
+          <div class="products__photo__item products__lenta production-menu__image" data-image-item="production-image-2"
+            style="background-image: url(./images/Gibion2.png)"></div>
+          <div class="products__photo__item products__geomembrana production-menu__image" data-image-item="production-image-3"
+            style="background-image: url(./images/Gibion3.png)"></div>
+          <div class="products__photo__item products__georeshetka production-menu__image" data-image-item="production-image-4"
+            style="background-image: url(./images/Gibion4.png)"></div>
+          <div class="products__photo__item products__reotekstil production-menu__image" data-image-item="production-image-5"
+            style="background-image: url(./images/Gibion5.png)"></div>
+        </div>
+      </div>
 
   <!-- build:js scripts/vendor.js -->
   <script src="/node_modules/jquery/dist/jquery.js"></script>
