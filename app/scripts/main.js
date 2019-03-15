@@ -19,11 +19,9 @@ $(function () {
     });
   });
 
-  $('.header__scroll-btn').on('click', function (el) {
-    el.preventDefault();
-    $('html, body').animate({
-      scrollTop: $('#advantages').offset().top
-    }, 600, 'linear');
+  $('[data-scroll-to]').on('click', function (e) {
+    e.preventDefault();
+    scrollToElement('#' + $(this).data('scroll-to'));
   });
 });
 
