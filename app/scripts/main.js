@@ -9,6 +9,8 @@ console.log('\'Allo \'Allo!');
 // $(function () { $('[data-toggle="popover"]').popover(); });
 
 $(function () {
+
+    /* Photos changing on hover */
   $('.js-production-menu').each(function () {
     var $list = $(this);
     var $images = $list.find('.js-production-menu-images');
@@ -19,6 +21,8 @@ $(function () {
     });
   });
 
+
+    /* Scroll to element on click */
   $('[data-scroll-to]').on('click', function (e) {
     e.preventDefault();
     scrollToElement('#' + $(this).data('scroll-to'));
