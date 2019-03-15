@@ -21,6 +21,10 @@
     position: absolute;
     top: 43px;
     left: 280px;
+
+    &.navigation__phone--main{
+      left: 0px;
+    }
   }
 
   .navigation__social {
