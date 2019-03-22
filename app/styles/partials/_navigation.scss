@@ -12,8 +12,8 @@
     background-repeat: no-repeat;
     background-size: auto;
     position: absolute;
-    left:0;
-    top:33px;
+    left: 0;
+    top: 33px;
   }
 
   .navigation__phone {
@@ -22,7 +22,7 @@
     top: 43px;
     left: 280px;
 
-    &.navigation__phone--main{
+    &.navigation__phone--main {
       left: 0px;
     }
   }
@@ -42,6 +42,7 @@
   font-size: 19px;
   margin: 0;
   align-items: center;
+  margin-left: 150px;
 
   .navigation-menu__link {
     display: inline-block;
@@ -68,5 +69,11 @@
     .navigation-social__link {
       padding-bottom: 3px;
     }
+  }
+}
+
+@media (max-width: 960px) {
+  .navigation-menu {
+    visibility: hidden;
   }
 }

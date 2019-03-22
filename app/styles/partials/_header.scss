@@ -15,13 +15,6 @@
     min-height: 600px;
   }
 
-  &.header--products {
-    height: 100vh;
-    min-height: 600px;
-    background-color: #ffffff;
-    color: #021429;
-  }
-
   .header__scroll-btn {
     position: absolute;
     z-index: 1;
@@ -83,6 +76,7 @@
   height: 350px;
   margin: 0 auto;
   margin-top: 200px;
+  justify-content: space-between;
 
   &.main-intro--products{
     margin-top: 120px;
@@ -92,9 +86,7 @@
   .main-intro__logo {
     width: 400px;
     height: 65px;
-    background-image: url(../images/Techplast-logo.png);
-    background-repeat: no-repeat;
-    background-size: auto;
+
 
     &.main-intro__logo--production {
         background-image: none;
@@ -104,8 +96,9 @@
   }
 
   .main-intro__text-container {
-    padding-left: 200px;
-    width: 780px;
+    display: flex;
+    flex-direction: column;
+    width: 680px;
     height: 320px;
     color: white;
 
@@ -136,6 +129,37 @@
 
       &.main-intro__origin--products {
         color: #021429;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 960px){
+  .main-intro {
+    width: 100%;
+    height: 100vh;
+    margin-top: 65px;
+
+    .main-intro__logo img {
+      width: 260px;
+      height: 40px;
+    }
+
+    .main-intro__text-container {
+      padding-left: 0;
+      width: 470px;
+      height: 240px;
+      color: white;
+
+      .main-intro__origin {
+        margin-top: 60px;
+        font-size: 15px;
+      }
+
+      .main-intro__text {
+        font-size: 28px;
+        line-height: 30px;
       }
     }
   }

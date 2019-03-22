@@ -1,0 +1,35 @@
+.mobile-menu-btn{ 
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+    top: 0;
+    right: 0;
+    width: 97px;
+    height: 50px;
+    border: none;
+    background-color: #01152c;
+    color: white;
+    padding: 5px;
+    display: none;
+
+    &:hover{
+        opacity: .5;
+    }
+    
+    p{
+        font-size: 18px;
+        margin: 0;
+        margin-top: 7px;
+    }
+    .mobile-menu-btn__burger{
+        font-size: 28px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .mobile-menu-btn{
+        display: inline-flex;
+    }
+}
