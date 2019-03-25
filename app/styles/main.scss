@@ -20,7 +20,7 @@ a {
 
 /* Blog block */
 
-.blog-section {
+/* .blog-section {
   display: flex;
   position: relative;
   width: 100%;
@@ -140,7 +140,7 @@ a {
 .blog__cross-btn:hover::after {
   transform: rotate(180deg);
 }
-
+ */
 
 /* About and Partners block */
 
@@ -448,3 +448,4 @@ a {
 @import "partials/navigation";
 @import "partials/mobile-menu";
 @import "partials/advantagies";
+@import "partials/blog";
