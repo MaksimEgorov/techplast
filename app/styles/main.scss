@@ -18,133 +18,7 @@ a {
 }
 
 
-/* Blog block */
-
-/* .blog-section {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 911px;
-  background-color: #f4f4f4;
-}
-
-.blog__latest {
-  width: 100%;
-  height: 100%;
-}
-
-.blog__navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1185px;
-  height: 150px;
-  margin: 0 auto;
-  margin-top: 70px;
-}
-
-.blog__navigation__name {
-  display: flex;
-  font-size: 40px;
-  color: #01152c;
-}
-
-.blog__navigation__more-btn,
-.about__explanation__more-btn {
-  display: flex;
-  position: relative;
-  font-size: 19px;
-  font-weight: 500;
-  color: #0dd926;
-}
-
-.blog__navigation .blog__navigation__name__btn{
-  width: 200px;
-  margin-left: 50px;
-  justify-content: right;
-}
-
-
-.blog__items {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  margin: 0 auto;
-  justify-content: space-between;
-  width: 1190px;
-  height: 260px;
-}
-
-.blog__item {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 380px;
-  height: 250px;
-  background-color: white;
-}
-
-.blog__item p {
-  display: flex;
-  margin: 0;
-  margin-left: 30px;
-  margin-top: 30px;
-  height: 70px;
-  color: #afafaf;
-}
-
-.blog__description {
-  display: flex;
-  width: 300px;
-  height: 80px;
-  font-size: 19px;
-  color: #01152c;
-  font-weight: 500;
-  margin-left: 30px;
-}
-
-.blog__cross-btn{
-  width: 50px;
-  height: 50px;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  margin-top: 30px;
-  margin-left: 30px;
-}
-
-.blog__cross-btn::before {
-  content: "";
-  width: 20px;
-  height: 2px;
-  background-color: #0dd926;
-  position: absolute;
-  transition-timing-function: ease-in-out;
-  transition: 1s;
-}
-
-.blog__cross-btn::after {
-  content: "";
-  width: 2px;
-  height: 20px;
-  position: absolute;
-  background-color: #0dd926;
-  left: 9px;
-  top: -9px;
-  transition-timing-function: ease-in-out;
-  transition: 1s;
-}
-
-.blog__cross-btn:hover::before,
-.blog__cross-btn:hover::after {
-  transform: rotate(180deg);
-}
- */
-
-/* About and Partners block */
-
-.about {
+/* .about {
   display: flex;
   width: 100%;
   height: 600px;
@@ -203,7 +77,7 @@ a {
   color: #acb4c0;
   margin-top: 20px;
 }
-
+ */
  .more-btn{
   margin-top: 30px;
   width: 250px;
@@ -449,3 +323,4 @@ a {
 @import "partials/mobile-menu";
 @import "partials/advantagies";
 @import "partials/blog";
+@import "partials/about";
