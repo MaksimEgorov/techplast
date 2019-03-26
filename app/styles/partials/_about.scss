@@ -57,3 +57,35 @@
     }
   }
 }
+
+@media screen and (max-width: 960px) {
+  .about .about__container {
+    width: 646px;
+    height: 670px;
+  }
+
+  .about .about__container .about__picture {
+    width: 370px;
+    height: 590px;
+  }
+
+  .about .about__container .about__explanation-block {
+    width: 370px;
+    height: 590px;
+  }
+
+  .about .about__container .about__explanation-block .about__explanation-block__wrapper {
+    width: 80%;
+    margin-top: 10px;
+
+    .about__explanation-block__company {
+      font-size: 28px;
+      height: 40px;
+    }
+
+    .about__explanation-block__text {
+      font-size: 15px;
+    }
+  }
+
+}
