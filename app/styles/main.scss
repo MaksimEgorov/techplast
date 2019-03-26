@@ -21,59 +21,7 @@ a {
 /*  */
  
 
-/* Partners section */
 
-.partners__conteiner{
-  width: 1180px;
-  height: 490px;
-  margin: 0 auto;
-  margin-top: 40px;
-
-  p{
-    width: 100%;
-    font-size: 40px;
-    color: #01152c;
-    margin-bottom: 40px;
-  }
-}
-
-.partners__banners{
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 205px;
-}
-
-.partners__banners__item {
-  display: flex;
-  width: 295px;
-  height: 200px;
-  border: 1px solid #afafaf;
-}
-
-.partner__1{
-  background-image: url(../images/rosneft_logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-right: 0.5px;
-}
-.partner__2{
-  background-image: url(../images/gazprom_logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-right: 0.5px;
-}
-.partner__3{
-  background-image: url(../images/lukoil__logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-right: 0.5px;
-}
-.partner__4{
-  background-image: url(../images/sibneft_logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 /* Footer block */
 
@@ -219,3 +167,4 @@ a {
 @import "partials/blog";
 @import "partials/about";
 @import "partials/cross-btn";
+@import "partials/partners";
