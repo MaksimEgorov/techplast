@@ -5,7 +5,7 @@
   margin-top: 40px;
 
   p {
-    width: 100%;
+    width: 95%;
     font-size: 40px;
     color: #01152c;
     margin-bottom: 40px;
@@ -60,18 +60,22 @@
     width: 100%;
   }
 
-  .partners__container p{
-      margin-left: 30px;
+  .partners__container p {
+    margin-left: 30px;
   }
 
-  .partners__container .partners__banners{
+  .partners__container .partners__banners {
     width: 95%;
     margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 960px){
-    .partners__container .partners__banners .partners__banners__item {
-        height: 150px;
-    }
+@media screen and (max-width: 960px) {
+  .partners__container .partners__banners .partners__banners__item {
+    height: 150px;
+  }
+
+  .partners__container {
+    height: 300px;
+  }
 }

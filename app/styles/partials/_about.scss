@@ -59,9 +59,12 @@
 }
 
 @media screen and (max-width: 960px) {
+  .about{
+    height: 470px;
+  }
+  
   .about .about__container {
     width: 646px;
-    height: 670px;
   }
 
   .about .about__container .about__picture {
