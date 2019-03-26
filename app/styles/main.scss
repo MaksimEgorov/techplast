@@ -18,114 +18,8 @@ a {
 }
 
 
-/* .about {
-  display: flex;
-  width: 100%;
-  height: 600px;
-  background: white;
-}
-
-.about__container{
-  display: flex;
-  position: relative;
-  width: 1180px;
-  height: 810px;
-  margin: 0 auto;
-  margin-top: -280px;
-}
-
-.about__picture{
-  display: flex;
-  position: absolute;
-  z-index: 1;
-  width: 680px;
-  height: 710px;
-  background-image: url(../images/road_corner.png);
-}
-
-.about__explanation-block__wrapper{
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  margin-top: 75px;
-  width: 450px;
-  height: 590px;
-}
-
-.about__explanation-block{
-  display: flex;
-  position: absolute;
-  z-index: 2;
-  width: 680px;
-  height: 710px;
-  background-color: #021429;
-  right: 0;
-  top: 100px;
-}
-
-.about__explanation__company{
-  display: flex;
-  width: 320px;
-  height: 70px;
-  font-size: 40px;
-  color: #00c418;
-}
-
-.about__explanation__text{
-  color: #acb4c0;
-  font-size: 19px;
-  color: #acb4c0;
-  margin-top: 20px;
-}
- */
- .more-btn{
-  margin-top: 30px;
-  width: 250px;
-  height: 30px;
-  cursor: pointer;
-  
-  a{
-    display: flex;
-    position: relative;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: 500;
-    color: #0dd926;
-    padding-left: 40px;
-
-    &:hover{
-      color: rgba(13, 217, 37, 0.5);
-    }
-  }
-  .cross-btn::before {
-    content: "";
-    width: 20px;
-    height: 2px;
-    background-color: #0dd926;
-    position: absolute;
-    transition-timing-function: ease-in-out;
-    transition: 1s;
-    left: 6px;
-    top: 13px;
-  }
-  
-  .cross-btn::after {
-    content: "";
-    width: 2px;
-    height: 20px;
-    position: absolute;
-    background-color: #0dd926;
-    left: 15px;
-    top: 4px;
-    transition-timing-function: ease-in-out;
-    transition: 1s;
-  }
-
-  .cross-btn:hover::before,
-  .cross-btn:hover::after {
-  transform: rotate(180deg);
-  }
-}
+/*  */
+ 
 
 /* Partners section */
 
@@ -324,3 +218,4 @@ a {
 @import "partials/advantagies";
 @import "partials/blog";
 @import "partials/about";
+@import "partials/cross-btn";
