@@ -14,7 +14,12 @@
     position: absolute;
     left: 0;
     top: 33px;
+
+    &.navigation__logo--main-page {
+      display: none;
+    }
   }
+
 
   .navigation__phone {
     font-size: 15px;
