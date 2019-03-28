@@ -1,4 +1,3 @@
-console.log('\'Allo \'Allo!');
 
 // Uncomment to enable Bootstrap tooltips
 // https://getbootstrap.com/docs/4.0/components/tooltips/#example-enable-tooltips-everywhere
@@ -10,7 +9,7 @@ console.log('\'Allo \'Allo!');
 
 $(function () {
 
-    /* Photos changing on hover */
+  /* Photos changing on hover */
   $('.js-production-menu').each(function () {
     var $list = $(this);
     var $images = $list.find('.js-production-menu-images');
@@ -22,51 +21,19 @@ $(function () {
   });
 
 
-    /* Scroll to element on click */
+  /* Scroll to element on click */
   $('[data-scroll-to]').on('click', function (e) {
     e.preventDefault();
     scrollToElement('#' + $(this).data('scroll-to'));
   });
+
+  $('.js-navigation').each(function () {
+    var $navigation = $(this);
+    var $button = $navigation.find('.js-mobile-menu-button');
+    console.log($button)
+    $button.on('click', function(e) {
+      e.preventDefault();
+      $navigation.toggleClass('navigation--mobile-open');
+    });
+  });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* window.onload = function () {
-    document.getElementById('lenta').onmouseover=function() {
-        document.getElementById('products-images').style.cssText='background: url("../images/Gibion2.png")';
-    }
-    document.getElementById('lenta').onmouseout=function() {
-        document.getElementById('products-images').style.cssText='background: url("../images/Gibion.png")';
-    }
-
-    document.getElementById('geomembrana').onmouseover=function() {
-        document.getElementById('products-images').style.cssText='background: url("../images/Gibion3.png")';
-    }
-    document.getElementById('geomembrana').onmouseout=function() {
-        document.getElementById('products-images').style.cssText='background: url("../images/Gibion.png")';
-    }
-
-    document.getElementById('georeshetka').onmouseover=function() {
-        document.getElementById('products-images').style.cssText='background: url("../images/Gibion4.png")';
-    }
-    document.getElementById('georeshetka').onmouseout=function() {
-        document.getElementById('products-images').style.cssText='background: url("../images/Gibion.png")';
-    }
-
-    document.getElementById('reotekstil').onmouseover=function() {
-        document.getElementById('products-images').style.cssText='background: url("../images/Gibion5.png")';
-    }
-    document.getElementById('reotekstil').onmouseout=function() {
-        document.getElementById('products-images').style.cssText='background: url("../images/Gibion.png")';
-    }
-} */
