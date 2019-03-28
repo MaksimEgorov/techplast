@@ -21,8 +21,10 @@
   <div class="header ">
     <div class="container-fluid container-fluid--header">
       <nav class="navigation">
-        <div class="navigation__logo"></div>
-        <div class="navigation__phone" x-ms-format-detection="none">(495) 721-80-87</div>
+        <div class="navigation__left-container">
+          <div class="navigation__logo"></div>
+          <div class="navigation__phone" x-ms-format-detection="none">(495) 721-80-87</div>
+        </div>
         <nav class="navigation-menu">
           <a class="navigation-menu__link " href="index.html">Главная</a>
           <a class="navigation-menu__link navigation-menu__link--active" href="products.html">Продукция</a>
@@ -34,6 +36,10 @@
           <a class="navigation-menu__link" href="#">Статьи</a>
         </nav>
       </nav>
+      <button class="mobile-menu-btn">
+        <span class="mobile-menu-btn__name">Меню</span>
+        <span class="mobile-menu-btn__burger">&#9776;</span>
+      </button>
       <div class="main-intro main-intro--products">
         <div class="main-intro__logo main-intro__logo--production">ПРОДУКЦИЯ</div>
         <div class="main-intro__text-container main-intro__text-container--production">
@@ -50,35 +56,35 @@
   <div class="container-fluid products-container products-container--production-menu js-production-menu">
     <div class="products__list products__list--production-menu">
       <div class="products__list__wrapper products__list__wrapper--production-menu js-production-menu-list" id="list">
-        <div class="products__item product__item--production  production-menu__image" data-image-ref="production-image-1"><a
-            class="production__link" href="#">Габионы</a></div>
+        <div class="products__item product__item--production  production-menu__image"
+          data-image-ref="production-image-1"><a class="production__link" href="#">Габионы</a></div>
         <div class="products__item--underline products__item--underline-production"></div>
-        <div class="products__item product__item--production production-menu__image" data-image-ref="production-image-2"><a
-            class="production__link" href="#">Лента
+        <div class="products__item product__item--production production-menu__image"
+          data-image-ref="production-image-2"><a class="production__link" href="#">Лента
             бордюрная</a></div>
         <div class="products__item--underline products__item--underline-production"></div>
-        <div class="products__item product__item--production production-menu__image" data-image-ref="production-image-3"><a
-            class="production__link" href="#">Геомембрана</a></div>
+        <div class="products__item product__item--production production-menu__image"
+          data-image-ref="production-image-3"><a class="production__link" href="#">Геомембрана</a></div>
         <div class="products__item--underline products__item--underline-production"></div>
-        <div class="products__item product__item--production production-menu__image" data-image-ref="production-image-4"><a
-            class="production__link" href="#">Георешетка</a></div>
+        <div class="products__item product__item--production production-menu__image"
+          data-image-ref="production-image-4"><a class="production__link" href="#">Георешетка</a></div>
         <div class="products__item--underline products__item--underline-production"></div>
-        <div class="products__item product__item--production production-menu__image" data-image-ref="production-image-5"><a
-            class="production__link" href="#">Геотекстиль
+        <div class="products__item product__item--production production-menu__image"
+          data-image-ref="production-image-5"><a class="production__link" href="#">Геотекстиль
             (Дорнит)</a></div>
       </div>
     </div>
     <div class="products__photo products__photo--production js-production-menu-images">
-      <div class="products__photo__item products__gabioni production-menu__image active" data-image-item="production-image-1"
-        style="background-image: url(./images/Gibion.png)"></div>
+      <div class="products__photo__item products__gabioni production-menu__image active"
+        data-image-item="production-image-1" style="background-image: url(./images/Gibion.png)"></div>
       <div class="products__photo__item products__lenta production-menu__image" data-image-item="production-image-2"
         style="background-image: url(./images/Gibion2.png)"></div>
-      <div class="products__photo__item products__geomembrana production-menu__image" data-image-item="production-image-3"
-        style="background-image: url(./images/Gibion3.png)"></div>
-      <div class="products__photo__item products__georeshetka production-menu__image" data-image-item="production-image-4"
-        style="background-image: url(./images/Gibion4.png)"></div>
-      <div class="products__photo__item products__reotekstil production-menu__image" data-image-item="production-image-5"
-        style="background-image: url(./images/Gibion5.png)"></div>
+      <div class="products__photo__item products__geomembrana production-menu__image"
+        data-image-item="production-image-3" style="background-image: url(./images/Gibion3.png)"></div>
+      <div class="products__photo__item products__georeshetka production-menu__image"
+        data-image-item="production-image-4" style="background-image: url(./images/Gibion4.png)"></div>
+      <div class="products__photo__item products__reotekstil production-menu__image"
+        data-image-item="production-image-5" style="background-image: url(./images/Gibion5.png)"></div>
     </div>
   </div>
 
@@ -107,16 +113,16 @@
         <a href="mailto:info@tehplastplus.ru" class="footer__email">info@tehplastplus.ru</a>
         <span class="footer__developer">Разработка сайта — <a href="#">Просто сайты</a></span>
       </div>
-  </div>
-  <!-- End of Footer section -->
+    </div>
+    <!-- End of Footer section -->
 
-  <!-- build:js scripts/vendor.js -->
-  <script src="/node_modules/jquery/dist/jquery.js"></script>
-  <script type="text/javascript" src="/node_modules/scroll-to-element/build/scrollToElement.js"></script>
-  <!-- endbuild -->
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
+    <!-- build:js scripts/vendor.js -->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/node_modules/scroll-to-element/build/scrollToElement.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

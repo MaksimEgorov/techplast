@@ -1,0 +1,31 @@
+@media (max-width: 960px) {
+  .navigation-menu--active {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    font-size: 19px;
+    background-color: #021429;
+    z-index: 10;
+    margin-right: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .navigation-menu__link {
+      display: inline-block;
+      height: 50px;
+      text-decoration: none;
+      padding-bottom: 5px;
+      border-bottom: solid transparent 3px;
+      color: inherit;
+      &.navigation-menu__link--active {
+        color: inherit;
+        border-bottom: none;
+      }
+      &:hover {
+        color: #bcc7cf;
+      }
+    }
+  }
+}
