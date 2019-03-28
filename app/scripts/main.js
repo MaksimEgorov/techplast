@@ -9,6 +9,9 @@
 
 $(function () {
 
+  var $html = $('html');
+  var $body = $('body');
+
   /* Photos changing on hover */
   $('.js-production-menu').each(function () {
     var $list = $(this);
@@ -33,7 +36,7 @@ $(function () {
     console.log($button)
     $button.on('click', function(e) {
       e.preventDefault();
-      $navigation.toggleClass('navigation--mobile-open');
+      $html.toggleClass('html-navigation-mobile-open');
     });
   });
 });
