@@ -8,10 +8,12 @@
   max-width: 1920px;
 
   &.products-container--production-menu {
-    width: 1180px;
-    height: 500px;
+    width: 95%;
+    height: 450px;
     background-color: transparent;
+    margin: 0 auto;
     margin-bottom: 200px;
+    margin-top: 50px;
   }
 
   .products__list {
@@ -26,7 +28,8 @@
 
     &.products__list--production-menu {
       background-color: transparent;
-      width: 40%;
+      width: 60%;
+      margin-right: 50px;
     }
 
     .products__list__wrapper {
@@ -34,7 +37,7 @@
       position: relative;
       flex-direction: column;
       flex-wrap: wrap;
-      width: 80%;
+      width: 60%;
       height: 630px;
 
       &.products__list__wrapper--production-menu {
