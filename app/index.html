@@ -20,10 +20,12 @@
 
   <div class="header header--main">
     <div class="container-fluid container-fluid--header">
-      <nav class="navigation">
-        <div class="navigation__logo hidden"></div>
-        <div class="navigation__phone" x-ms-format-detection="none">(495) 721-80-87</div>
-        <nav class="navigation-menu navigation-menu--active">
+      <nav class="navigation js-navigation">
+        <div class="navigation__left-container navigation__left-container--main">
+          <div class="navigation__logo hidden"></div>
+          <div class="navigation__phone" x-ms-format-detection="none">(495) 721-80-87</div>
+        </div>
+        <nav class="navigation-menu">
           <a class="navigation-menu__link navigation-menu__link--active" href="index.html">Главная</a>
           <a class="navigation-menu__link " href="products.html">Продукция</a>
           <a class="navigation-menu__link " href="#">О компании</a>
@@ -33,11 +35,11 @@
           <a class="navigation-menu__link" href="#">Блог</a>
           <a class="navigation-menu__link" href="#">Статьи</a>
         </nav>
+        <button class="mobile-menu-btn js-mobile-menu-button">
+          <span class="mobile-menu-btn__text">Меню</span>
+          <span class="mobile-menu-btn__icon"></span>
+        </button>
       </nav>
-      <button class="mobile-menu-btn">
-        <span class="mobile-menu-btn__name">Меню</span>
-        <span class="mobile-menu-btn__burger">&#9776;</span>
-      </button>
       <div class="main-intro">
         <div class="main-intro__logo"><img src="./images/Techplast-logo.png" alt="Техпласт+"></div>
         <div class="main-intro__text-container">
