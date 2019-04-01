@@ -206,28 +206,30 @@
 
   <!-- start of Footer section -->
   <div class="footer">
-    <div class="footer__container">
-      <div class="footer__logo__copyright">
-        <a href="#" class="footer__logo"></a>
-        <p>© 2009—2018 Техпласт+</p>
+    <div class="container">
+      <div class="row">
+        <a href="#" class="col footer__logo"></a>
+        <div class="col footer__navigation">
+          <ul class="footer__navigation__items">
+            <li class="footer__navigation__item"><a href="index.html">Главная</a></li>
+            <li class="footer__navigation__item"><a href="products.html">Продукция</a></li>
+            <li class="footer__navigation__item"><a href="#">О компании</a></li>
+            <li class="footer__navigation__item"><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="footer__social">
+            <li class="footer__blog"><a href="#">Блог</a></li>
+            <li class="footer__articles"><a href="#">Статьи</a></li>
+          </ul>
+        </div>
+        <div class="col footer__contacts">
+            <p class="footer__phone" x-ms-format-detection="none">(495) 721-80-87</p>
+            <a href="mailto:info@tehplastplus.ru" class="footer__email">info@tehplastplus.ru</a>
+          </div>
       </div>
-      <div class="footer__navigation">
-        <ul class="footer__navigation__items">
-          <li class="footer__navigation__item"><a href="index.html">Главная</a></li>
-          <li class="footer__navigation__item"><a href="products.html">Продукция</a></li>
-          <li class="footer__navigation__item"><a href="#">О компании</a></li>
-          <li class="footer__navigation__item"><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="footer__social">
-          <li class="footer__blog"><a href="#">Блог</a></li>
-          <li class="footer__articles"><a href="#">Статьи</a></li>
-        </ul>
-        <a href="#" class="footer__privacy-policy">Политика конфедициальности</a>
-      </div>
-      <div class="footer__contacts">
-        <p class="footer__phone" x-ms-format-detection="none">(495) 721-80-87</p>
-        <a href="mailto:info@tehplastplus.ru" class="footer__email">info@tehplastplus.ru</a>
-        <span class="footer__developer">Разработка сайта — <a href="#">Просто сайты</a></span>
+      <div class="row footer__copyright">
+        <p class="col footer__copyright-text">© 2009—2018 Техпласт+</p>
+        <a href="#" class="col footer__privacy-policy">Политика конфедициальности</a>
+        <span class="col footer__developer">Разработка сайта — <a href="#">Просто сайты</a></span>
       </div>
     </div>
   </div>
