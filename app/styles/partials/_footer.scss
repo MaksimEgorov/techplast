@@ -2,34 +2,35 @@
   width: 100%;
   background-color: #021429;
   max-width: 1920px;
-  margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 100px;
 
+  ul {
+    margin: 0;
+  }
+
   .footer__logo {
     display: block;
-    width: 200px;
-    height: 50px;
-    background-image: url(../images/techplast_logo_grey.png);
+    width: 155px;
+    height: 33px;
+    background-image: url(../images/techplast_logo_grey_155.png);
     background-repeat: no-repeat;
     background-position: left;
+
+    @include media-breakpoint-down(md) {
+      width: 120px;
+      background-image: url(../images/techplast_logo_grey_120.png);
+    }
   }
 
   .footer__navigation {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    flex-direction: row;
-
     a {
       text-decoration: none;
     }
 
     .footer__navigation-items {
-      display: flex;
-      flex-direction: column;
       padding: 0;
-      line-height: 30px;
+      /* line-height: 35px; */
 
       .footer__navigation-item {
         list-style: none;
@@ -51,10 +52,9 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin-left: 20px;
 
     li {
-      height: 40px;
+      /* line-height: 35px; */
       list-style: none;
 
       a {
@@ -73,48 +73,60 @@
     display: flex;
     flex-direction: column;
     text-align: right;
-  
+    /* line-height: 30px; */
+
     p {
       font-size: 15px;
       color: #acb4c0;
+      margin: 0;
+
     }
-  
+
     a {
       text-decoration: none;
       font-size: 15px;
       color: #acb4c0;
-  
+
+
       &:hover {
         color: #00c418;
       }
     }
   }
-  
+
   .footer__copyright-text {
-    color: #acb4c0;
+    display: block;
+    color: #747a83;
     padding-left: 0;
     padding-right: 30px;
+    margin-top: 150px;
+    font-size: 15px;
   }
-  
+
   .footer__privacy-policy {
+    display: block;
     font-size: 15px;
     color: #747a83;
     text-decoration: none;
-  
+    margin-top: 150px;
+
     &:hover {
       color: #00c418;
     }
   }
+
   .footer__developer {
+    display: block;
+    margin-top: 150px;
     text-align: right;
     font-size: 15px;
-    color: #acb4c0;
-  
+    color: #747a83;
+
     a {
       text-decoration: none;
       font-size: 15px;
       color: #acb4c0;
-  
+
       &:hover {
         color: #00c418;
       }
@@ -125,12 +137,42 @@
 
 @media (max-width: 1220px) {}
 
-@media (min-width: 1200px) {}
+@media (max-width: 1200px) {}
 
-@media (min-width: 992px) {}
+@media (max-width: 992px) {
+  .footer .footer__privacy-policy {
+    margin-top: 10px;
+  }
+}
 
-@media (min-width: 960px) {}
+@media (max-width: 960px) {
 
-@media (min-width: 768px) {}
+  .footer .footer__social li a,
+  .footer .footer__contacts p,
+  .footer .footer__contacts a,
+  .footer .footer__privacy-policy,
+  .footer .footer__developer,
+  .footer .footer__developer a,
+  .footer .footer__copyright-text {
+    font-size: 13px;
+  }
+
+  .footer .footer__navigation .footer__navigation-items .footer__navigation-item {
+    a {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .footer .footer__copyright-text {
+    margin-top: 100px;
+  }
+
+  .footer .footer__developer,
+  .footer .footer__developer a {
+    margin-top: 100px;
+  }
+}
 
 @media (max-width: 576px) {}
