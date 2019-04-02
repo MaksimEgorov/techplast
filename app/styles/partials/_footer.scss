@@ -1,7 +1,4 @@
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   background-color: #021429;
   max-width: 1920px;
@@ -9,124 +6,38 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
-  .container {
-    .row {
-      .col.footer__logo {
-        display: flex;
-        width: 200px;
-        height: 50px;
-        background-image: url(../images/techplast_logo_grey.png);
-        background-repeat: no-repeat;
-        background-position: left;
-      }
+  .footer__logo {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-image: url(../images/techplast_logo_grey.png);
+    background-repeat: no-repeat;
+    background-position: left;
+  }
 
-      .col.footer__navigation {
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        flex-direction: row;
-        height: 100%;
-        width: 36%;
-        margin-left: auto;
-        a {
-          text-decoration: none;
-        }
+  .footer__navigation {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row;
 
-        .footer__navigation__items {
-          display: flex;
-          flex-direction: column;
-          padding: 0;
-          line-height: 30px;
-
-          li {
-            list-style: none;
-
-            a {
-              text-decoration: none;
-              font-size: 19px;
-              color: #fefefe;
-
-              &:hover {
-                color: #00c418;
-              }
-            }
-          }
-        }
-
-        .footer__social {
-          display: flex;
-          flex-direction: column;
-          padding: 0;
-          margin-left: 20px;
-
-          li {
-            height: 40px;
-            list-style: none;
-
-            a {
-              text-decoration: none;
-              font-size: 15px;
-              color: #acb4c0;
-
-              &:hover {
-                color: #00c418;
-              }
-            }
-          }
-        }
-      }
-
-      .col.footer__contacts {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 300px;
-        margin-left: auto;
-        text-align: right;
-
-        p {
-          font-size: 15px;
-          color: #acb4c0;
-        }
-
-        a {
-          text-decoration: none;
-          font-size: 15px;
-          color: #acb4c0;
-
-          &:hover {
-            color: #00c418;
-          }
-        }
-      }
+    a {
+      text-decoration: none;
     }
 
-    .row.footer__copyright {
-      margin-top: 50px;
+    .footer__navigation-items {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      line-height: 30px;
 
-      .col.footer__copyright-text {
-        color: #747a83;
-        padding-left: 0;
-        padding-right: 30px;
-      }
+      .footer__navigation-item {
+        list-style: none;
 
-      .col.footer__privacy-policy {
-        font-size: 15px;
-        color: #747a83;
-        text-decoration: none;
-
-        &:hover {
-          color: #00c418;
-        }
-      }
-      .col.footer__developer {
-        text-align: right;
-        font-size: 15px;
-        color: #acb4c0;
         a {
           text-decoration: none;
-          font-size: 15px;
-          color: #acb4c0;
+          font-size: 19px;
+          color: #fefefe;
 
           &:hover {
             color: #00c418;
@@ -135,34 +46,91 @@
       }
     }
   }
+
+  .footer__social {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 20px;
+
+    li {
+      height: 40px;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #acb4c0;
+
+        &:hover {
+          color: #00c418;
+        }
+      }
+    }
+  }
+
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  
+    p {
+      font-size: 15px;
+      color: #acb4c0;
+    }
+  
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      color: #acb4c0;
+  
+      &:hover {
+        color: #00c418;
+      }
+    }
+  }
+  
+  .footer__copyright-text {
+    color: #acb4c0;
+    padding-left: 0;
+    padding-right: 30px;
+  }
+  
+  .footer__privacy-policy {
+    font-size: 15px;
+    color: #747a83;
+    text-decoration: none;
+  
+    &:hover {
+      color: #00c418;
+    }
+  }
+  .footer__developer {
+    text-align: right;
+    font-size: 15px;
+    color: #acb4c0;
+  
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      color: #acb4c0;
+  
+      &:hover {
+        color: #00c418;
+      }
+    }
+  }
 }
 
-@media (min-width: 576px) {
 
-}
+@media (max-width: 1220px) {}
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {}
 
-}
+@media (min-width: 992px) {}
 
-@media (min-width: 960px) {
+@media (min-width: 960px) {}
 
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 992px) {
-
-}
-
-@media (min-width: 1200px) {
-}
-
-@media (max-width: 1220px) {
-}
-
-
-
-
-
-
-
-
+@media (max-width: 576px) {}
