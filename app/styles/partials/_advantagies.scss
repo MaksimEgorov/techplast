@@ -82,4 +82,16 @@
 }
 
 
-@media screen and (max-width: 896px) {}
+@media screen and (max-width: 636px) {
+  .container-fluid--advantages .advantages__wrapper{
+    width: 282px;
+  }
+  .container-fluid--advantages .advantages__wrapper .advantages__item{
+    width: 280px;
+    height: 100px;
+  }
+  .container-fluid--advantages{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}

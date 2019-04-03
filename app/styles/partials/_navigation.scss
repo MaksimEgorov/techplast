@@ -88,9 +88,7 @@ $navigationHeight: 110px;
   }
 }
 
-/* .mobile-menu-btn {
-  display: none;
-} */
+
 
 @media (max-width: 1300px) {
   .navigation .navigation__logo {
@@ -233,5 +231,11 @@ $navigationHeight: 110px;
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 400px){
+  .mobile-menu-btn {
+    right: -20px;
   }
 }
