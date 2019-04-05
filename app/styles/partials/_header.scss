@@ -74,7 +74,6 @@
   display: flex;
   position: relative;
   width: 80%;
-  /* height: 350px; */
   margin: 0 auto;
   margin-top: 200px;
   justify-content: space-between;
@@ -220,8 +219,10 @@
   }
 
   .main-intro .main-intro__logo.main-intro__logo--production{
-    font-size: 40px;
+    display: flex;
+    font-size: 28px;
     width: 60%;
+    height: auto;
   }
   .main-intro .main-intro__text-container .main-intro__text.main-intro__text--products{
     font-size: 15px;
@@ -236,9 +237,6 @@
 
 @media screen and (max-width: 720px){
 
-  .main-intro .main-intro__text-container{
-    width: 100%;
-  }
   .main-intro .main-intro__logo img {
     width: 205px;
     height: 32px;
@@ -266,6 +264,16 @@
   .main-intro .main-intro__text-container .main-intro__origin{
     font-size: 13px;
   }
+  .main-intro .main-intro__text-container.main-intro__text-container--production{
+    width: 280px;
+  }
+  .main-intro.main-intro--products{
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 643px){
+  
 }
 
 @media screen and (max-width: 475px){

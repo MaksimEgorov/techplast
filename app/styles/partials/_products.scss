@@ -195,4 +195,18 @@
   .products-container .products__list{
     padding-top: 30px;
   }
+
+  /* Production page rules */
+  .products-container.products-container--production-menu{
+    margin-top: 0;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  .products-container .products__list.products__list--production-menu{
+    width: 100%;
+    margin-right: 0;
+  }
+  .main-intro.main-intro--products{
+    margin-bottom: 0;
+  }
 }
