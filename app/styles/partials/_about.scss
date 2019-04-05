@@ -90,5 +90,26 @@
       font-size: 15px;
     }
   }
-
 }
+
+@media screen and (max-width: 386px){
+  .about .about__container{
+    width: 100%;
+    justify-content: center;
+  }
+  .about .about__container .about__picture{
+    width: 100%;
+  }
+  .about .about__container .about__explanation-block{
+    width: 100%;
+    height: auto;
+    
+  }
+  .about .about__container .about__explanation-block .about__explanation-block__wrapper .about__explanation-block__text{
+    font-size: 13px;
+  }
+  .about .about__container .about__explanation-block .about__explanation-block__wrapper .about__explanation-block__company{
+    width: auto;
+  }
+}
+

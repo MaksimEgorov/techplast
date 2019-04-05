@@ -65,14 +65,14 @@
   }
 
   .partners__container .partners__banners {
-    width: 99%;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 960px) {
   .partners__container .partners__banners .partners__banners__item {
-    height: 150px;
+    height: 120px;
   }
   .partners__container {
     height: 300px;
@@ -90,3 +90,45 @@
     background-image: url(../images/sibneft_logo720.png);
   }
 }
+
+@media screen and (max-width: 636px){
+  .partners__container{
+    height: auto;
+    margin-top: 0;
+  }
+  .partners__container .partners__banners {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 400px;
+  }
+  .partners__container .partners__banners .partners__banners__item.partner__1,
+  .partners__container .partners__banners .partners__banners__item.partner__2,
+  .partners__container .partners__banners .partners__banners__item.partner__3,
+  .partners__container .partners__banners .partners__banners__item.partner__4 {
+    width: 210px;
+    border: 1px solid #afafaf;
+  }
+  .partners__container p{
+    font-size: 28px;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 436px){
+  .partners__container .partners__banners{
+    height: 620px;
+    margin-bottom: 30px;
+  }
+}
+/* 
+@media screen and (max-width: 617px){
+  .partners__container .partners__banners .partners__banners__item.partner__1,
+  .partners__container .partners__banners .partners__banners__item.partner__2,
+  .partners__container .partners__banners .partners__banners__item.partner__3,
+  .partners__container .partners__banners .partners__banners__item.partner__4 {
+    width: 220px; 
+}
+} */
